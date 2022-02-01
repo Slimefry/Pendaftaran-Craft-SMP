@@ -1,0 +1,130 @@
+<html>
+	<head>
+        <title>Pendaftaran</title>
+    </head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  /*padding: 1em;*/
+  word-break: break-word;
+  cursor: auto;
+}
+.container {
+   /*position: relative;*/
+  position: relative;
+  top: 0px;
+  left: 0px;
+  /*width: 100%;*/
+  /*max-width: 100%;*/
+    cursor: auto;
+
+}
+
+.container .background {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 0px;
+  left: 0px;
+cursor: auto;
+}
+
+.container .btn{
+  position: absolute;
+  max-width: auto;
+  height: 10%;
+  background: transparent;
+left: 50%;
+top: 45%;
+transform: translate(-50%, -50%);
+}
+
+
+.container .btn:hover {
+    position:absolute;
+    /*transform: translate(-60%, -60%);*/
+    max-width: auto;
+    height: 10%;
+    top: 44%;
+    z-index:999;
+}
+
+.container .btn:active {
+  position:absolute;
+  background-color: transparent;
+  box-shadow: transparent;
+  max-width: auto;
+  height: 10%;
+  top: 48%;
+  /*transform: translateY(4px);*/
+}
+
+/* For width 400px and larger: */
+/*@media only screen and (max-width: 400px) {
+  .container .btn{
+      position:absolute;
+    /*right: 30px;
+    top: 15px;*/
+  }
+}*/
+
+@media screen and (min-width: 641px) {      
+     #bg{      
+       content:url(mcl.png);
+       content:url(daftar.png);
+     } 
+} 
+
+@media screen and (max-width: 640px) {      
+     #bg{      
+       content:url(mcp.png);
+     } 	
+     #btn{      
+       content:url(daftar.png);
+     } 
+} 
+</style>
+</head>
+<body>
+
+<div class="container">
+    <!--
+  <div id="bg" class="background"></div>
+  
+  <center><a href="https://session.acaraku.live/session/redirect/11">
+      <div id="btn" class="btn"></div>
+      </a></center>
+-->
+
+	<img id="bg" class="background" src="mcl.png"  alt="Snow">
+  
+  <center>
+      <!--<a href="https://session.acaraku.live/session/redirect/14">-->
+      <img id="btn" class="btn" src="daftar.png" onclick="myFunction()">
+      <!--</a>-->
+      </center>
+  
+
+  <!-- <img id="bg2" class="background1" src="mcl.png" alt="Snow"> -->
+  <!-- bg.jpeg -->
+
+</div>
+
+<script>
+function myFunction() {
+ window.location = "https://forms.gle/mQwh4V8HRBBXoie97";
+} 
+</script>
+
+
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4588603&101" alt="counter" border="0"></a></noscript>
+
+
+</body>
+
+
+</html>
